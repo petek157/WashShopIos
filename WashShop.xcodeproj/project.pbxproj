@@ -14,6 +14,7 @@
 		3101E41021E1B4E1000D9BBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3101E40E21E1B4E1000D9BBA /* LaunchScreen.storyboard */; };
 		3101E41B21E1B4E2000D9BBA /* WashShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3101E41A21E1B4E2000D9BBA /* WashShopTests.swift */; };
 		3101E42621E1B4E2000D9BBA /* WashShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3101E42521E1B4E2000D9BBA /* WashShopUITests.swift */; };
+		EC45E86DCC629C0EFB671F72 /* libPods-WashShop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A78CE74F04010C2AA4DA1C8 /* libPods-WashShop.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,10 @@
 		3101E42121E1B4E2000D9BBA /* WashShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WashShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3101E42521E1B4E2000D9BBA /* WashShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashShopUITests.swift; sourceTree = "<group>"; };
 		3101E42721E1B4E2000D9BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3101E43321E2E11D000D9BBA /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		5A78CE74F04010C2AA4DA1C8 /* libPods-WashShop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WashShop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A79CA147014EA41B8F7CFDD9 /* Pods-WashShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WashShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-WashShop/Pods-WashShop.release.xcconfig"; sourceTree = "<group>"; };
+		D5F63AC81B3829A907AD63FC /* Pods-WashShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WashShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WashShop/Pods-WashShop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC45E86DCC629C0EFB671F72 /* libPods-WashShop.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,8 @@
 				3101E41921E1B4E2000D9BBA /* WashShopTests */,
 				3101E42421E1B4E2000D9BBA /* WashShopUITests */,
 				3101E40321E1B4D3000D9BBA /* Products */,
+				D533C7B9F32DBEC2F9A49B59 /* Pods */,
+				C55B9F7D97E96134D1354B57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +105,7 @@
 		3101E40421E1B4D3000D9BBA /* WashShop */ = {
 			isa = PBXGroup;
 			children = (
+				3101E43321E2E11D000D9BBA /* Bridging-Header.h */,
 				3101E40521E1B4D3000D9BBA /* AppDelegate.swift */,
 				3101E40721E1B4D3000D9BBA /* ViewController.swift */,
 				3101E40921E1B4D3000D9BBA /* Main.storyboard */,
@@ -125,6 +134,23 @@
 			path = WashShopUITests;
 			sourceTree = "<group>";
 		};
+		C55B9F7D97E96134D1354B57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A78CE74F04010C2AA4DA1C8 /* libPods-WashShop.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D533C7B9F32DBEC2F9A49B59 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5F63AC81B3829A907AD63FC /* Pods-WashShop.debug.xcconfig */,
+				A79CA147014EA41B8F7CFDD9 /* Pods-WashShop.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +158,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3101E42A21E1B4E2000D9BBA /* Build configuration list for PBXNativeTarget "WashShop" */;
 			buildPhases = (
+				1BE9518AB94585E9A8B848D4 /* [CP] Check Pods Manifest.lock */,
 				3101E3FE21E1B4D3000D9BBA /* Sources */,
 				3101E3FF21E1B4D3000D9BBA /* Frameworks */,
 				3101E40021E1B4D3000D9BBA /* Resources */,
@@ -251,6 +278,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1BE9518AB94585E9A8B848D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WashShop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3101E3FE21E1B4D3000D9BBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -363,13 +415,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "WashShop/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Debug;
 		};
@@ -418,23 +472,27 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "WashShop/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				USER_HEADER_SEARCH_PATHS = "Pods/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		3101E42B21E1B4E2000D9BBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5F63AC81B3829A907AD63FC /* Pods-WashShop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5J8PH9GUR8;
 				INFOPLIST_FILE = WashShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -442,17 +500,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = biz.p3media.WashShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3101E42C21E1B4E2000D9BBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A79CA147014EA41B8F7CFDD9 /* Pods-WashShop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5J8PH9GUR8;
 				INFOPLIST_FILE = WashShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,7 +520,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = biz.p3media.WashShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
